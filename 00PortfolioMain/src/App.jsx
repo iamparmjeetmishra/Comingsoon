@@ -1,4 +1,5 @@
 import { Navbar, Sidebar } from './components/index.js'
+import {Home} from './pages'
 import dark from './assets/dark.svg'
 
 const App = () => {
@@ -26,6 +27,14 @@ const App = () => {
           </div>
           <div className='col-span-12 lg:col-span-8 '>
             <Navbar />
+            <div className='lg:rounded-2xl bg-white dark:bg-[#111111]'>
+              <div>
+                <div className='pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14'>
+                <Home />
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
