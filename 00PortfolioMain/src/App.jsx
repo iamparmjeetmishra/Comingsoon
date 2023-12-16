@@ -1,8 +1,12 @@
-
+import {Home} from './pages'
+import {Header} from './components'
 
 const App = () => {
   return (
-    <div className="text-3xl font-bold">App</div>
+    <>
+      <Header />
+      <Home />
+    </>
   )
 }
 
