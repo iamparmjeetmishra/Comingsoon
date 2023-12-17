@@ -3,10 +3,10 @@ import {Header} from './components'
 
 const App = () => {
   return (
-    <>
+    <section className='bg-homeBg min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark:bg-homeTwoBg-dark md:pb-16 w-full'>
       <Header />
       <Home />
-    </>
+    </section>
   )
 }
 
