@@ -8,6 +8,12 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter']
+      },
+      colors: {
+        'twOg': {
+          100: '#fa5252',
+          200: '#dd2476',
+        }
       }
     },
   },

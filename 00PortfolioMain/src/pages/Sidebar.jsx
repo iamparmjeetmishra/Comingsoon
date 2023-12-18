@@ -17,7 +17,21 @@ const Sidebar = () => {
                   <a
                       href={info.socials.twitter}
                       target='noreferrer noopener'
-                      className='p-4 bg-neutral-800/90 rounded-xl'
+                      className='p-3 bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color '
+                  >
+                          <Twitter />
+                  </a>
+                  <a
+                      href={info.socials.twitter}
+                      target='noreferrer noopener'
+                      className='p-3 bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color '
+                  >
+                          <Twitter />
+                  </a>
+                  <a
+                      href={info.socials.twitter}
+                      target='noreferrer noopener'
+                      className='p-3 bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color '
                   >
                           <Twitter />
                   </a>
