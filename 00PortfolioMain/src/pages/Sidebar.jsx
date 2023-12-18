@@ -1,5 +1,7 @@
-import {Profile, Twitter} from '../media'
+import {Profile} from '../media'
 import info from '../info.json'
+import { SocialBtn } from '../components'
+
 
 const Sidebar = () => {
   return (
@@ -13,29 +15,7 @@ const Sidebar = () => {
           <div className='pt-[100px] pb-8'>
               <h1 className='mt-6 mb-1 text-3xl font-semibold dark:text-white'>{info.name}</h1>
               <h3 className='mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6] '>{info.title}</h3>
-              <div className='flex justify-center space-x-3'>
-                  <a
-                      href={info.socials.twitter}
-                      target='noreferrer noopener'
-                      className='p-3 bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color '
-                  >
-                          <Twitter />
-                  </a>
-                  <a
-                      href={info.socials.twitter}
-                      target='noreferrer noopener'
-                      className='p-3 bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color '
-                  >
-                          <Twitter />
-                  </a>
-                  <a
-                      href={info.socials.twitter}
-                      target='noreferrer noopener'
-                      className='p-3 bg-neutral-800/90 rounded-xl hover:bg-gradient-to-r from-twOg-100 to-twOg-200 hover:transition-background-color '
-                  >
-                          <Twitter />
-                  </a>
-              </div>
+              <SocialBtn />
           </div>
     </div>
   )

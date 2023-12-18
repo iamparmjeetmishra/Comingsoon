@@ -5,7 +5,7 @@ import A from './ui/A'
 import InfoCard from './ui/InfoCard'
 import Header from './header/Header.jsx'
 import Nav from './header/Nav.jsx'
-
+import SocialBtn from './ui/SocialBtn.jsx'
 
 export {
     Button,
@@ -15,4 +15,6 @@ export {
     InfoCard,
     Header,
     Nav,
+    SocialBtn,
+
 }
