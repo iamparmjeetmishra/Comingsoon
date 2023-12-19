@@ -1,11 +1,28 @@
-import {Home} from './pages'
-import {Header} from './components'
+import {Home, Sidebar, Resume, Projects, Blogs, Contact} from './pages'
+import {Header, Footer} from './components'
+import {Route, Routes} from 'react-router-dom'
 
 const App = () => {
   return (
     <section className='bg-homeBg container mx-auto min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark:bg-homeTwoBg-dark md:pb-16 w-full'>
       <Header />
-      <Home />
+      <div className="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]">
+        <div className="col-span-12 grid lg:col-span-4 lg:h-screen lg:sticky top-44">
+          <Sidebar />
+        </div>
+        <div className='col-span-12 lg:col-span-8 '>
+          <div className='pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14 lg:rounded-2xl bg-white dark:bg-[#111111]'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/resume' element={<Resume />} />
+              <Route path='/works' element={<Projects />} />
+              <Route path='/blogs' element={<Blogs />} />
+              <Route path='/contact' element={<Contact />} />
+            </Routes>
+          </div>
+            <Footer />
+        </div>
+      </div>
     </section>
   )
 }
