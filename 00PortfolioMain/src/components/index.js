@@ -6,6 +6,8 @@ import InfoCard from './ui/InfoCard'
 import Header from './header/Header.jsx'
 import Nav from './header/Nav.jsx'
 import SocialBtn from './ui/SocialBtn.jsx'
+import InfoBox from './ui/InfoBox.jsx'
+
 
 export {
     Button,
@@ -16,5 +18,5 @@ export {
     Header,
     Nav,
     SocialBtn,
-
+    InfoBox,
 }
